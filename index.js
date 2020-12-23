@@ -8,7 +8,7 @@ const port = process.env.PORT || 3977;
 
 
 mongoose.connect('mongodb://localhost:27017/notis',
-{useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true, useNewUrlParser: true },
+{useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true, useNewUrlParser: true, useFindAndModify: false },
 (err, res) => {
   if(err){
     throw err;
